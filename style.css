@@ -40,3 +40,125 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.doporucujeme {
+    width: 100%;
+    color: white;
+}
+
+.hlavni-recept {
+    background: red url(images/burger.jpg) no-repeat;
+}
+
+.recept2 {
+    background: burlywood url(images/sushi.jpg) no-repeat;
+}
+
+.recept3 {
+    background: brown url(images/rajcata.jpg) no-repeat;
+}
+
+.recept4 {
+    background: gray url(images/kure.jpg) no-repeat;
+}
+
+.recept5 {
+    background: black url(images/grilovani.jpg) no-repeat;
+}
+
+.hlavni-recept, .recept {
+    background-size: 100%;
+    background-position: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hlavni-recept {
+    min-height: 200px;
+}
+
+.recept {
+    min-height: 90px;
+    border-top: 1px solid white;
+}
+
+.recept-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hlavni-recept .recept-nazev {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.recept .recept-nazev {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+@media (min-width: 480px) {
+    .sloupec {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 50%;
+    }
+
+    .recept2, .recept3 {
+        border-right: 1px solid white;
+    }
+
+    .hlavni-recept {
+        min-height: 250px;
+        padding: 20px;
+    }
+    
+    .recept {
+        min-height: 150px;
+        padding: 20px;
+    }
+
+    .hlavni-recept .recept-nazev {
+        font-size: 36px;
+    }
+
+    .recept .recept-nazev {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 860px) {
+    .doporucujeme {
+        display: flex;
+    }
+
+    .hlavni-recept {
+        background-size: cover;
+        width: 50%;
+        border-right: 1px solid white;
+        min-height: 400px;
+    }
+
+    .recept {
+        background-size: cover;
+        border-top: none;
+        min-height: 200px;
+    }
+
+    .recept2, .recept4 {
+        border-bottom: 1px solid white;
+    }
+
+    .hlavni-recept .recept-nazev {
+        font-size: 48px;
+    }
+
+    .recept .recept-nazev {
+        font-size: 28px;
+    }
+}
